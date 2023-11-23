@@ -5,6 +5,18 @@ const alfabetoMinusculo = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'
 const numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const simbolosEspeciais = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '{', '}', '[', ']', '|', ';', ':', '<', '>', ',', '.', '?', '/'];
 
+function checar() {
+    let maisculaCheckBox = document.getElementById('letrasMaiusculas');
+    let minusculaCheckBox = document.getElementById('letrasMinusculas');
+    let numerosCheckBox = document.getElementById('numeros');
+    let simbolosEspeciaisCheckBox = document.getElementById('simbolosEspeciais');
+}
 
-let inputSenha = document.getElementById('tamanhoSenha').value;
-console.log(inputSenha);
+for (let i = 0; i <= 0; i++){
+    senha.push(alfabetoMaiusculo[i]);
+    senha.push(alfabetoMinusculo[i]);
+    senha.push(numeros[i]);
+    senha.push(simbolosEspeciais[i]);
+}
+
+console.log(senha.join(""));
