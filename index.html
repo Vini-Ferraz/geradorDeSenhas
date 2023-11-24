@@ -7,22 +7,29 @@
 </head>
 <body>
 
-    <div>
-        <input type="checkbox" name="letrasMaiusculas" id="letrasMaiusculas">
-        <label for="letrasMaiusculas">Letras Maiúsculas</label>
+    <main>
+        <h1 id="titulo">Gerador de Senhas</h1>
+            <div id="inputCaixa">
+                <input type="text" placeholder="Sua Senha">
 
-        <input type="checkbox" name="letrasMinusculas" id="letrasMinusculas">
-        <label for="letrasMinusculas">Letras Minúsculas</label>
+                <input type="checkbox" name="letrasMaiusculas" id="letrasMaiusculas">
+                <label for="letrasMaiusculas">Letras Maiúsculas</label>
 
-        <input type="checkbox" name="numeros" id="numeros">
-        <label for="numeros">Números</label>
+                <input type="checkbox" name="letrasMinusculas" id="letrasMinusculas">
+                <label for="letrasMinusculas">Letras Minúsculas</label>
 
-        <input type="checkbox" name="simbolosEspeciais" id="simbolosEspeciais">
-        <label for="simbolosEspeciais">Símbolos Especiais</label>
+                <input type="checkbox" name="numeros" id="numeros">
+                <label for="numeros">Números</label>
 
-        <input type="number" name="tamanhoSenha" id="tamanhoSenha" min="0" max="20" step="5">
-        <label for="tamanhoSenha">Tamanho da senha</label>
-    </div>
+                <input type="checkbox" name="simbolosEspeciais" id="simbolosEspeciais">
+                <label for="simbolosEspeciais">Símbolos Especiais</label>
+
+                <label for="tamanhoSenha">Tamanho da senha</label>
+                <input type="number" name="tamanhoSenha" id="tamanhoSenha" min="0" max="20" step="5">
+
+                <button id="btnGerarSenha">Gerar Senha</button>
+        </div>
+    </main>
 
     <script src="assets\script.js"></script>
 </body>
