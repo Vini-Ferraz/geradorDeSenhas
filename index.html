@@ -11,24 +11,34 @@
     <main>
         <img src="assets\leão_daora.jpeg" alt="Um leão e um cadeado azul" id="imagem">
         <div id="elementoTexto">
-            <h1 class="titulo">Gerador de Senhas</h1>
-                <div id="inputCaixa" class="input">
-                    <input type="text" id="senhaInput" class="titulo-secundario" placeholder="Sua Senha">
+            <h1 class="titulo margin-bottom-g">Gerador de Senhas</h1>
+                <div id="inputCaixaFlex" class="input">
+                    <input type="text" id="senhaInput" class="titulo-secundario margin-bottom-g" placeholder="Sua Senha">
 
-                    <input type="checkbox" name="letrasMaiusculas" id="letrasMaiusculas" class="checkBoxCustomizado">
-                    <label for="letrasMaiusculas">Letras Maiúsculas</label>
+                    <span class="inputFlex margin-bottom-m">
+                        <input type="checkbox" name="letrasMaiusculas" id="letrasMaiusculas" class="checkBoxCustomizado">
+                        <label for="letrasMaiusculas">Letras Maiúsculas</label>
+                    </span>
+                    
+                    <span class="inputFlex margin-bottom-m">
+                        <input type="checkbox" name="letrasMinusculas" id="letrasMinusculas" class="checkBoxCustomizado">
+                        <label for="letrasMinusculas">Letras Minúsculas</label>
+                    </span>
 
-                    <input type="checkbox" name="letrasMinusculas" id="letrasMinusculas" class="checkBoxCustomizado">
-                    <label for="letrasMinusculas">Letras Minúsculas</label>
+                    <span class="inputFlex margin-bottom-m">
+                        <input type="checkbox" name="numeros" id="numeros" class="checkBoxCustomizado">
+                        <label for="numeros">Números</label>
+                    </span>
 
-                    <input type="checkbox" name="numeros" id="numeros" class="checkBoxCustomizado">
-                    <label for="numeros">Números</label>
+                    <span class="inputFlex margin-bottom-m">
+                        <input type="checkbox" name="simbolosEspeciais" id="simbolosEspeciais" class="checkBoxCustomizado">
+                        <label for="simbolosEspeciais">Símbolos Especiais</label>
+                    </span>
 
-                    <input type="checkbox" name="simbolosEspeciais" id="simbolosEspeciais" class="checkBoxCustomizado">
-                    <label for="simbolosEspeciais">Símbolos Especiais</label>
-
-                    <label for="tamanhoSenha">Tamanho da senha</label>
-                    <input type="number" name="tamanhoSenha" id="tamanhoSenha" min="0" max="20" step="1" class="checkBoxCustomizadoNumero input">
+                    <span class="inputFlex margin-bottom-g">
+                        <input type="number" name="tamanhoSenha" id="tamanhoSenha" min="0" max="20" step="1" class="checkBoxCustomizadoNumero input">
+                        <label for="tamanhoSenha">Tamanho da senha</label>
+                    </span>
 
                     <button id="btnGerarSenha" class="titulo-secundario" onclick="gerarSenha()">Gerar Senha</button>
                 </div>

@@ -5,6 +5,7 @@
     --fonte-cor: #0C0C0C;
     --input-fundo-cor: #01001F;
     --input-fonte-cor: #e4e4e4;
+    --fundo-cor-checkbox: #D9D9D9;
     --fonte-tamanho-titulo: 45px;
     --fonte-tamanho-titulo-secundario: 40px;
     --fonte-tamanho-input: 30px;
@@ -27,6 +28,12 @@
     font-weight: 500;
     color: var(--input-fonte-cor);
 }
+.margin-bottom-g{
+    margin-bottom: 5%;
+}
+.margin-bottom-m{
+    margin-bottom: 2.5%;
+}
 .input{
     font-size: var(--fonte-tamanho-input);
     font-weight: 500;
@@ -37,14 +44,55 @@
     background-color: var(--input-fundo-cor);
     border-radius: 5px;
     border-style: none;
-    padding: 0.5% 1%;
+    padding: 1% 3%;
+    width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.checkBoxCustomizado:hover, #btnGerarSenha:hover{
+    cursor: pointer;
+}
+#senhaInput::placeholder{
+    color: #e4e4e4a6;
+    font-style: italic;
 }
 .checkBoxCustomizado{
     height: 40px;
     width: 40px;
+    margin-right: 3%;
 }
 .checkBoxCustomizadoNumero{
     height: 40px;
     width: 80px;
+    margin-right: 3%;
+}
+
+#elementoTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 45vw;
+}
+
+#inputCaixaFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputFlex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#imagem{
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+main{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
 }
