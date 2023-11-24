@@ -10,6 +10,7 @@ function gerarSenha() {
     let numerosCheckBox = document.getElementById('numeros');
     let simbolosEspeciaisCheckBox = document.getElementById('simbolosEspeciais');
     let tamanhoDaSenha = document.getElementById('tamanhoSenha').value;
+    let campoSenha = document.getElementById('senhaInput');
 
     for (let i = 0; i <= tamanhoDaSenha; i++){
         if (maisculaCheckBox.checked) {
@@ -39,5 +40,5 @@ function gerarSenha() {
     }
     let senhaMisturada = embaralharSenha(senha);
     let senhaFinal = senhaMisturada.slice(0, tamanhoDaSenha).join("");
-    console.log(senhaFinal);
+    campoSenha.value = senhaFinal;
 }
