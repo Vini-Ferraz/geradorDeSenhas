@@ -29,16 +29,15 @@ function gerarSenha() {
             senha.push(simbolosEspeciais[num]);
         }
     }
-
-    function embaralharSenha(array) {
-        let senhaEmbaralhada = senha.slice();
-        for (let i = senhaEmbaralhada.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
+    function embaralharSenha(arr){
+        let senhaEmbaralhada = arr.slice();
+        for (let i  = 0; i < senhaEmbaralhada.length; i++){
+            const j = Math.floor(Math.random() * senhaEmbaralhada.length);
             [senhaEmbaralhada[i], senhaEmbaralhada[j]] = [senhaEmbaralhada[j], senhaEmbaralhada[i]];
+            return senhaEmbaralhada;
         }
-    
-        return senhaEmbaralhada;
     }
-    let result = embaralharSenha(senha);
-    console.log(result.splice(0, tamanhoDaSenha).join(""));
+    let senhaMisturada = embaralharSenha(senha);
+    let senhaFinal = senhaMisturada.slice(0, tamanhoDaSenha).join("");
+    console.log(senhaFinal);
 }
