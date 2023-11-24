@@ -9,30 +9,28 @@
 <body>
 
     <main>
-        <figure id="caixaImagem">
-            <img src="assets\leão_daora.jpeg" alt="Um leão e um cadeado azul">
-        </figure>
+        <img src="assets\leão_daora.jpeg" alt="Um leão e um cadeado azul" id="imagem">
         <div id="elementoTexto">
-            <h1 id="titulo">Gerador de Senhas</h1>
-                <div id="inputCaixa">
-                    <input type="text" id="senhaInput" placeholder="Sua Senha">
+            <h1 class="titulo">Gerador de Senhas</h1>
+                <div id="inputCaixa" class="input">
+                    <input type="text" id="senhaInput" class="titulo-secundario" placeholder="Sua Senha">
 
-                    <input type="checkbox" name="letrasMaiusculas" id="letrasMaiusculas">
+                    <input type="checkbox" name="letrasMaiusculas" id="letrasMaiusculas" class="checkBoxCustomizado">
                     <label for="letrasMaiusculas">Letras Maiúsculas</label>
 
-                    <input type="checkbox" name="letrasMinusculas" id="letrasMinusculas">
+                    <input type="checkbox" name="letrasMinusculas" id="letrasMinusculas" class="checkBoxCustomizado">
                     <label for="letrasMinusculas">Letras Minúsculas</label>
 
-                    <input type="checkbox" name="numeros" id="numeros">
+                    <input type="checkbox" name="numeros" id="numeros" class="checkBoxCustomizado">
                     <label for="numeros">Números</label>
 
-                    <input type="checkbox" name="simbolosEspeciais" id="simbolosEspeciais">
+                    <input type="checkbox" name="simbolosEspeciais" id="simbolosEspeciais" class="checkBoxCustomizado">
                     <label for="simbolosEspeciais">Símbolos Especiais</label>
 
                     <label for="tamanhoSenha">Tamanho da senha</label>
-                    <input type="number" name="tamanhoSenha" id="tamanhoSenha" min="0" max="20" step="1">
+                    <input type="number" name="tamanhoSenha" id="tamanhoSenha" min="0" max="20" step="1" class="checkBoxCustomizadoNumero input">
 
-                    <button id="btnGerarSenha" onclick="gerarSenha()">Gerar Senha</button>
+                    <button id="btnGerarSenha" class="titulo-secundario" onclick="gerarSenha()">Gerar Senha</button>
                 </div>
         </div>
     </main>

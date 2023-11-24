@@ -1,14 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 :root{
-    --fonte-principal: font-family: 'Montserrat', sans-serif;
+    --fonte-principal: 'Montserrat', sans-serif;
     --fonte-cor: #0C0C0C;
     --input-fundo-cor: #01001F;
-    --input-fonte-cor: #D1D1D1;
+    --input-fonte-cor: #e4e4e4;
+    --fonte-tamanho-titulo: 45px;
+    --fonte-tamanho-titulo-secundario: 40px;
+    --fonte-tamanho-input: 30px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+.titulo{
+    font-size: var(--fonte-tamanho-titulo);
+    font-weight: 700;
+    color: var(--fonte-cor);
+}
+.titulo-secundario{
+    font-size: var(--fonte-tamanho-titulo-secundario);
+    font-weight: 500;
+    color: var(--input-fonte-cor);
+}
+.input{
+    font-size: var(--fonte-tamanho-input);
+    font-weight: 500;
+    color: var(--fonte-cor);
+}
+
+#senhaInput, #btnGerarSenha{
+    background-color: var(--input-fundo-cor);
+    border-radius: 5px;
+    border-style: none;
+    padding: 0.5% 1%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.checkBoxCustomizado{
+    height: 40px;
+    width: 40px;
+}
+.checkBoxCustomizadoNumero{
+    height: 40px;
+    width: 80px;
 }
