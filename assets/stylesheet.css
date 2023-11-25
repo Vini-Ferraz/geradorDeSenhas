@@ -118,6 +118,9 @@ main{
     .checkBoxCustomizado{
         height: 30px;
         width: 30px;
-        margin-right: 3%;
+    }
+    .checkBoxCustomizadoNumero{
+        height: 30px;
+        width: 50px;
     }
 }
