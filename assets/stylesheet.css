@@ -6,9 +6,12 @@
     --input-fundo-cor: #01001F;
     --input-fonte-cor: #e4e4e4;
     --fundo-cor-checkbox: #D9D9D9;
-    --fonte-tamanho-titulo: 45px;
-    --fonte-tamanho-titulo-secundario: 40px;
-    --fonte-tamanho-input: 30px;
+    --fonte-tamanho-titulo: 4vw;
+    --fonte-tamanho-titulo-telas-md-sm: 8.5vw;
+    --fonte-tamanho-titulo-secundario: 3.2vw;
+    --fonte-tamanho-titulo-secundario-md-sm: 7vw;
+    --fonte-tamanho-input: 2.5vw;
+    --fonte-tamanho-input-md-sm: 5vw;
 }
 
 * {
@@ -66,33 +69,56 @@
     margin-right: 3%;
 }
 
-#elementoTexto{
+#elementoTexto, #inputCaixaFlex, .inputFlex, main{
     display: flex;
+}
+#elementoTexto, #inputCaixaFlex{
     flex-direction: column;
+}
+#elementoTexto{
     align-items: start;
     justify-content: center;
     width: 45vw;
 }
-
-#inputCaixaFlex{
-    display: flex;
-    flex-direction: column;
-}
-
-.inputFlex{
-    display: flex;
+.inputFlex, main{
     align-items: center;
+}
+.inputFlex{
     justify-content: flex-start;
 }
-
 #imagem{
     width: 50vw;
     height: 100vh;
     object-fit: cover;
 }
-
 main{
-    display: flex;
-    align-content: center;
     justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    #imagem{
+        display: none;
+    }
+    #elementoTexto{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .titulo{
+        font-size: var(--fonte-tamanho-titulo-telas-md-sm);
+    }
+    .titulo-secundario{
+        font-size: var(--fonte-tamanho-titulo-secundario-md-sm);
+    }
+    .input{
+        font-size: var(--fonte-tamanho-input-md-sm);
+    }
+
+    .checkBoxCustomizado{
+        height: 30px;
+        width: 30px;
+        margin-right: 3%;
+    }
 }
