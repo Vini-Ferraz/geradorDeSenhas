@@ -42,3 +42,8 @@ function gerarSenha() {
     let senhaFinal = senhaMisturada.slice(0, tamanhoDaSenha).join("");
     campoSenha.value = senhaFinal;
 }
+
+let senhaBtn = document.getElementById('btnGerarSenha');
+senhaBtn.addEventListener('click', function() {
+    gerarSenha();
+})
