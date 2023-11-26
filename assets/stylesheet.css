@@ -58,7 +58,7 @@
 #senhaInput{
     color: var(--fundo-cor-place-holder);
     font-style: italic;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 .checkBoxCustomizado{
     height: 40px;
