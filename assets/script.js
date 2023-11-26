@@ -38,8 +38,8 @@ function gerarSenha() {
         for (let i  = 0; i < senhaEmbaralhada.length; i++){
             const j = Math.floor(Math.random() * senhaEmbaralhada.length);
             [senhaEmbaralhada[i], senhaEmbaralhada[j]] = [senhaEmbaralhada[j], senhaEmbaralhada[i]];
-            return senhaEmbaralhada;
         }
+        return senhaEmbaralhada;
     }
     // Embaralhar a senha e obter a versão final
     let senhaMisturada = embaralharSenha(senha);
