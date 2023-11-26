@@ -44,7 +44,7 @@ function gerarSenha() {
     // Embaralhar a senha e obter a versão final
     let senhaMisturada = embaralharSenha(senha);
     let senhaFinal = senhaMisturada.slice(0, tamanhoDaSenha).join("");
-    campoSenha.value = senhaFinal;
+    campoSenha.textContent = senhaFinal;
 }
 // Obter o botão e adicionar um ouvinte de eventos para gerar senha ao clicar
 let senhaBtn = document.getElementById('btnGerarSenha');
