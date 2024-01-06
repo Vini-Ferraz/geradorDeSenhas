@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets\stylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets\stylesheet.css" />
     <title>Gerador De Senhas</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main>
-        <img src="assets\leão_daora.jpeg" alt="Um leão e um cadeado azul" id="imagem">
-        <div id="elementoTexto">
-            <h1 class="titulo margin-bottom-g">Gerador de Senhas</h1>
-            <!-- Div para elementos de texto e formulário -->
-                <div id="inputCaixaFlex" class="input">
-                    <!-- Campo de entrada para exibir a senha gerada -->
-                    <p id="senhaInput" class="titulo-secundario margin-bottom-g">Sua Senha</p>
-                    <!-- Opções para personalizar a senha -->
-                    <span class="inputFlex margin-bottom-m">
-                        <input type="checkbox" name="letrasMaiusculas" id="letrasMaiusculas" class="checkBoxCustomizado">
-                        <label for="letrasMaiusculas">Letras Maiúsculas</label>
-                    </span>
-                    
-                    <span class="inputFlex margin-bottom-m">
-                        <input type="checkbox" name="letrasMinusculas" id="letrasMinusculas" class="checkBoxCustomizado">
-                        <label for="letrasMinusculas">Letras Minúsculas</label>
-                    </span>
+      <img
+        src="assets\leão_daora.jpeg"
+        alt="Um leão e um cadeado azul"
+        id="imagem"
+      />
+      <div id="elementoTexto">
+        <h1 class="titulo margin-bottom-g">Gerador de Senhas</h1>
+        <!-- Div para elementos de texto e formulário -->
+        <div id="inputCaixaFlex" class="input">
+          <!-- Campo de entrada para exibir a senha gerada -->
+          <p id="senhaInput" class="titulo-secundario margin-bottom-g">
+            Sua Senha
+          </p>
+          <!-- Opções para personalizar a senha -->
+          <span class="inputFlex margin-bottom-m">
+            <input
+              type="checkbox"
+              name="letrasMaiusculas"
+              id="letrasMaiusculas"
+              class="checkBoxCustomizado"
+            />
+            <label for="letrasMaiusculas">Letras Maiúsculas</label>
+          </span>
 
-                    <span class="inputFlex margin-bottom-m">
-                        <input type="checkbox" name="numeros" id="numeros" class="checkBoxCustomizado">
-                        <label for="numeros">Números</label>
-                    </span>
+          <span class="inputFlex margin-bottom-m">
+            <input
+              type="checkbox"
+              name="letrasMinusculas"
+              id="letrasMinusculas"
+              class="checkBoxCustomizado"
+            />
+            <label for="letrasMinusculas">Letras Minúsculas</label>
+          </span>
 
-                    <span class="inputFlex margin-bottom-m">
-                        <input type="checkbox" name="simbolosEspeciais" id="simbolosEspeciais" class="checkBoxCustomizado">
-                        <label for="simbolosEspeciais">Símbolos Especiais</label>
-                    </span>
-                    <!-- Tamanho desejado para a senha -->
-                    <span class="inputFlex margin-bottom-g">
-                        <input type="number" name="tamanhoSenha" id="tamanhoSenha" min="0" max="20" step="1" class="checkBoxCustomizadoNumero input">
-                        <label for="tamanhoSenha">Tamanho da senha</label>
-                    </span>
-                    <!-- Botão para gerar a senha -->
-                    <button id="btnGerarSenha" class="titulo-secundario">Gerar Senha!</button>
-                </div>
+          <span class="inputFlex margin-bottom-m">
+            <input
+              type="checkbox"
+              name="numeros"
+              id="numeros"
+              class="checkBoxCustomizado"
+            />
+            <label for="numeros">Números</label>
+          </span>
+
+          <span class="inputFlex margin-bottom-m">
+            <input
+              type="checkbox"
+              name="simbolosEspeciais"
+              id="simbolosEspeciais"
+              class="checkBoxCustomizado"
+            />
+            <label for="simbolosEspeciais">Símbolos Especiais</label>
+          </span>
+          <!-- Tamanho desejado para a senha -->
+          <span class="inputFlex margin-bottom-g">
+            <input
+              type="number"
+              name="tamanhoSenha"
+              id="tamanhoSenha"
+              min="0"
+              max="20"
+              step="1"
+              class="checkBoxCustomizadoNumero input"
+            />
+            <label for="tamanhoSenha">Tamanho da senha</label>
+          </span>
+          <!-- Botão para gerar a senha -->
+          <button id="btnGerarSenha" class="titulo-secundario margin-bottom-g">
+            Gerar Senha
+          </button>
+          <button class="titulo-secundario margin-bottom-g" id="btnCopia">
+            Copiar Senha
+          </button>
         </div>
+      </div>
     </main>
 
     <script src="assets\script.js"></script>
-</body>
+    <script src="assets\scriptCopiarSenha.js"></script>
+  </body>
 </html>
