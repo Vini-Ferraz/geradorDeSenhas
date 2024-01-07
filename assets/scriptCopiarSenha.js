@@ -14,3 +14,7 @@ let btnCopiar = document.getElementById("btnCopia");
 btnCopiar.addEventListener("click", function () {
   copiarSenha();
 });
+
+/*Pop Up*/
+
+let popUpPositivo = document.getElementById("popUpPositivo");
