@@ -68,6 +68,10 @@
 #btnCopia:hover {
   cursor: pointer;
 }
+#btnGerarSenha:hover,
+#btnCopia:hover {
+  background-color: #030146;
+}
 #senhaInput {
   color: var(--fundo-cor-place-holder);
   font-style: italic;
