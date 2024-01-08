@@ -109,7 +109,7 @@ main,
   height: 100vh;
   object-fit: cover;
 }
-#popUpPositivo {
+.popUpPositivoEstilo {
   background-color: var(--fundo-cor-popUp-positivo);
   padding: 0.5vw;
   opacity: 0;
@@ -120,6 +120,7 @@ main,
 }
 .popUpPositivoRevelar {
   opacity: 1;
+  transition: 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 main {
   justify-content: space-between;
