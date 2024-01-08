@@ -65,7 +65,7 @@
 }
 .checkBoxCustomizado:hover,
 #btnGerarSenha:hover,
-#btnCopia {
+#btnCopia:hover {
   cursor: pointer;
 }
 #senhaInput {
