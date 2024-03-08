@@ -1,9 +1,10 @@
-/* Importando a fonte Montserrat do Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+/* Importando as fontes Montserrat e Share Tech do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap");
 /* Definição de variáveis CSS personalizadas usando :root */
 :root {
   --fonte-principal: "Montserrat", sans-serif;
   --fonte-cor: #0c0c0c;
+  --fonte-cor-senha: #40dd40;
   --input-fundo-cor: #01001f;
   --input-fonte-cor: #e4e4e4;
   --fundo-cor-place-holder: #d9d9d9;
@@ -73,8 +74,9 @@
   background-color: #030146;
 }
 #senhaInput {
-  color: var(--fundo-cor-place-holder);
-  font-style: italic;
+  color: var(--fonte-cor-senha);
+  font-family: "Share Tech Mono", monospace;
+  white-space: nowrap;
   overflow-x: auto;
 }
 .checkBoxCustomizado {
@@ -143,7 +145,7 @@ main {
     display: none;
   }
   #elementoTexto {
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding: 0 5%;
     width: 100vw;
