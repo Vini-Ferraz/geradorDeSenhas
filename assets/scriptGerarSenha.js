@@ -87,7 +87,27 @@ function gerarSenha() {
     ".",
     "?",
     "/",
+    "~",
+    "`",
+    "'",
+    '"',
+    "£",
+    "¥",
+    "€",
+    "¢",
+    "§",
+    "ª",
+    "º",
+    "©",
+    "®",
+    "™",
+    "±",
+    "µ",
+    "÷",
+    "¡",
+    "¿",
   ];
+
   // Obter as opções selecionadas pelo usuário
   let maisculaCheckBox = document.getElementById("letrasMaiusculas");
   let minusculaCheckBox = document.getElementById("letrasMinusculas");
